@@ -73,10 +73,12 @@ body {
   display: flex;
   width: 100%;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-self: flex-start;
+  margin-top: -2vmin;
 }
 #weather span {
+  text-align: end;
   font-size: 5vmin;
   font-weight: 600;
 }
@@ -117,14 +119,14 @@ body {
 #todo-form {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
   height: 100%;
   width: 100%;
 }
 #todo-form .inputBox {
   display: flex;
   justify-content: center;
-  margin-bottom: 2vh;
+  align-items: flex-end;
+  margin-bottom: 1vmin;
 }
 #todo-form input[type=text] {
   display: flex;
@@ -134,7 +136,7 @@ body {
   outline-style: none;
   border-radius: 5px;
   opacity: 0.6;
-  font-size: 4vmin;
+  font-size: 3.5vmin;
 }
 #todo-form input[type=text]:focus-within {
   opacity: 1;
@@ -168,21 +170,21 @@ body {
 .lastGrid {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 }
 .lastGrid #quote {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-bottom: 5px;
+  padding-bottom: 0.5vmin;
 }
 .lastGrid #quote span {
-  font-size: 2vw;
+  font-size: 3vmin;
   background-color: black;
   color: gray;
   opacity: 0.7;
   border-radius: 5px;
-  padding: 3px;
+  padding: 2px;
 }
 .lastGrid #quote span:first-child {
   margin-bottom: 1px;
