@@ -1,3 +1,4 @@
+@import "../css/reset.css";
 html {
   font-size: 10px;
 }
@@ -7,8 +8,123 @@ body {
   width: 100%;
   height: 100vh;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
 }
 
 .hidden {
   display: none;
+}
+
+.greetingBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#greeting {
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.loginoutBox {
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+}
+.loginoutBox input[type=submit] {
+  padding: 3px 10px;
+  border: 0 none;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.loginoutBox input {
+  background-color: black;
+  color: gray;
+}
+.loginoutBox:focus-within {
+  opacity: 1;
+}
+
+.clockWraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+}
+.clockWraper .clockBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vw;
+  background-color: rgba(190, 190, 190, 0.5);
+  border-radius: 99px;
+}
+.clockWraper .clockBox .clockInnerBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  font-weight: 600;
+}
+
+#clock {
+  font-size: 10rem;
+}
+
+#ampm {
+  padding-bottom: 1vh;
+  font-size: 5vw;
+}
+
+.todoBox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+  height: 90%;
+  width: 100%;
+}
+.todoBox li {
+  font-size: 5vw;
+  font-weight: 600;
+}
+.todoBox button {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0 none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 4vw;
+}
+.todoBox input[type=text] {
+  display: flex;
+  width: 90%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  opacity: 0.6;
+}
+.todoBox input[type=text]:focus-within {
+  opacity: 1;
+}
+.todoBox .inputBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
+}
+
+.todo-list {
+  position: relative;
+  width: 100vw;
+  height: 50vh;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  grid-auto-flow: column;
+}
+.todo-list li {
+  display: grid;
 }
