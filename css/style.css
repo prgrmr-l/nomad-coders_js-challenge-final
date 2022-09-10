@@ -20,8 +20,6 @@ body {
 .firstGrid {
   display: grid;
   grid-template-rows: 20% 50% 30%;
-  height: 100%;
-  width: 100%;
 }
 
 .greetingBox {
@@ -47,12 +45,15 @@ body {
   margin: 10px;
   cursor: pointer;
   border-radius: 5px;
+  font-size: 3vmin;
 }
 .loginoutBox input[type=text] {
   border: 0 none;
   border-radius: 5px;
   padding: 3px 10px;
   outline-style: none;
+  font-size: 3vmin;
+  text-align: center;
 }
 .loginoutBox input {
   background-color: black;
@@ -70,7 +71,7 @@ body {
 
 #weather {
   display: flex;
-  width: 95%;
+  width: 100%;
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
@@ -127,12 +128,13 @@ body {
 }
 #todo-form input[type=text] {
   display: flex;
-  width: 90vw;
+  width: 92vw;
   padding: 10px;
   border: 1px solid gray;
   outline-style: none;
   border-radius: 5px;
   opacity: 0.6;
+  font-size: 4vmin;
 }
 #todo-form input[type=text]:focus-within {
   opacity: 1;
@@ -172,10 +174,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 .lastGrid #quote span {
-  font-size: 4vmin;
+  font-size: 2vw;
   background-color: black;
   color: gray;
   opacity: 0.7;
@@ -183,5 +185,5 @@ body {
   padding: 3px;
 }
 .lastGrid #quote span:first-child {
-  margin-bottom: 1vh;
+  margin-bottom: 1px;
 }
