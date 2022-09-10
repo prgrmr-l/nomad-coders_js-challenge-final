@@ -51,5 +51,5 @@ const meaning = document.querySelector("#quote span:last-child");
 
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = todaysQuote.quote;
-meaning.innerText = todaysQuote.meaning;
+quote.innerText = `<속담>: ${todaysQuote.quote}`;
+meaning.innerText = `<뜻>: ${todaysQuote.meaning}`;

@@ -6,7 +6,7 @@ html {
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   width: 100%;
-  height: 100vh;
+  height: 100vmax;
   background-size: cover;
   display: grid;
   grid-template-rows: 30% 60% 10%;
@@ -48,6 +48,12 @@ body {
   cursor: pointer;
   border-radius: 5px;
 }
+.loginoutBox input[type=text] {
+  border: 0 none;
+  border-radius: 5px;
+  padding: 3px 10px;
+  outline-style: none;
+}
 .loginoutBox input {
   background-color: black;
   color: gray;
@@ -59,19 +65,22 @@ body {
 .firstGridMiddle {
   display: grid;
   justify-content: center;
-  grid-template-columns: 30% 60%;
+  grid-template-columns: 25% 75%;
 }
 
 #weather {
   display: flex;
-  width: 85%;
+  width: 95%;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
 }
 #weather span {
-  font-size: 3rem;
+  font-size: 5vmin;
   font-weight: 600;
+}
+#weather span:first-child {
+  margin-bottom: 0.4vh;
 }
 
 .clockWraper {
@@ -96,7 +105,7 @@ body {
 }
 
 #clock {
-  font-size: 10rem;
+  font-size: 15vmin;
 }
 
 #ampm {
@@ -107,7 +116,7 @@ body {
 #todo-form {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   height: 100%;
   width: 100%;
 }
@@ -121,6 +130,7 @@ body {
   width: 90vw;
   padding: 10px;
   border: 1px solid gray;
+  outline-style: none;
   border-radius: 5px;
   opacity: 0.6;
 }
@@ -130,24 +140,48 @@ body {
 
 .secondGrid {
   display: grid;
-  grid-template-rows: repeat(auto-fill, minmax(5rem, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(9vmin, 1fr));
   grid-template-columns: repeat(auto-fill, minmax(-webkit-max-content, 1fr));
   grid-template-columns: repeat(auto-fill, minmax(max-content, 1fr));
   grid-auto-flow: column;
   padding: 0 1rem;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(239, 233, 233, 0.3);
   border-radius: 5px;
 }
 .secondGrid li {
-  font-size: 3vw;
+  font-size: 6vmin;
   font-weight: 600;
+  display: flex;
+  align-items: center;
 }
 .secondGrid button {
+  text-align: center;
   background-color: rgba(0, 0, 0, 0);
   border: 0 none;
   cursor: pointer;
+  border-radius: 4px;
+  font-size: 4vmin;
+}
+
+.lastGrid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.lastGrid #quote {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-bottom: 10px;
+}
+.lastGrid #quote span {
+  font-size: 4vmin;
+  background-color: black;
+  color: gray;
+  opacity: 0.7;
   border-radius: 5px;
-  font-size: 4vw;
+  padding: 3px;
+}
+.lastGrid #quote span:first-child {
+  margin-bottom: 1vh;
 }
