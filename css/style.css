@@ -9,7 +9,7 @@ body {
   height: 100vh;
   background-size: cover;
   display: grid;
-  grid-template-rows: 30% 60% 10%;
+  grid-template-rows: 35% 50% 15%;
   flex-direction: column;
 }
 
